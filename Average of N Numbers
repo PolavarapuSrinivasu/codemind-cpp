@@ -1,0 +1,21 @@
+#include <iostream>
+
+int main() {
+    int n;
+    float sum = 0;
+
+    std::cout << "Enter the number of values: ";
+    std::cin >> n;
+
+    for (int i = 1; i <= n; ++i) {
+        float value;
+        std::cout << "Enter value " << i << ": ";
+        std::cin >> value;
+        sum += value;
+    }
+
+    float average = sum / n;
+    std::cout << "Average: " << average << std::endl;
+
+    return 0;
+}
