@@ -1,0 +1,19 @@
+#include <iostream>
+
+int sumOfDigits(int num) {
+    if (num < 10) {
+        return num;
+    }
+    return num % 10 + sumOfDigits(num / 10);
+}
+
+int main() {
+    int num;
+    std::cout << "Enter a number: ";
+    std::cin >> num;
+
+    int result = sumOfDigits(num);
+    std::cout << "Sum of digits of " << num << " is: " << result << std::endl;
+
+    return 0;
+}
