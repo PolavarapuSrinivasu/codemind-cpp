@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+ 
+void areSame(int a, int b)
+{
+    if (a ^ b) //XOR 
+        cout << "Not Same";
+    else
+        cout << "Same";
+}
+
+int main()
+{
+    areSame(10, 20);
+}
